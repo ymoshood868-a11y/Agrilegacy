@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Farm Insights & Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/1200x/50/fb/f7/50fbf7c7a1e1314cf2d878e944d58e36.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Farm Insights</h1>
+            <p>Latest News, Tips & Expert Articles</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Latest <span>Articles</span></h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Stay updated with the latest trends, tips, and innovations in modern agriculture.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Featured <span>Posts</span></h2>
+        <div class="cards-grid">
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/1200x/a3/9c/c0/a39cc0d28fed85a1f511473615803b53.jpg" alt="Blog" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar"></i> March 15, 2024</div>
+                    <h3>10 Sustainable Farming Practices for 2024</h3>
+                    <p>Discover the latest eco-friendly techniques that are transforming modern agriculture and helping farmers reduce their environmental impact while increasing profitability.</p>
+                    <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-block; margin-top: 1rem;">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/5e/82/a0/5e82a0adf6049ba9a5aab42d7c390906.jpg" alt="Blog" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar"></i> March 10, 2024</div>
+                    <h3>The Future of Aquaculture: Trends to Watch</h3>
+                    <p>Exploring innovations in fish farming that are revolutionizing the industry, from AI monitoring to sustainable feed alternatives.</p>
+                    <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-block; margin-top: 1rem;">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=400" alt="Blog" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar"></i> March 5, 2024</div>
+                    <h3>AI in Livestock Management: A Complete Guide</h3>
+                    <p>How artificial intelligence is changing the way we care for farm animals, from health monitoring to breeding optimization.</p>
+                    <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-block; margin-top: 1rem;">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Insights for modern farmers.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="insights.html">Blog</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

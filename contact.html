@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?w=1600');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Get In Touch</h1>
+            <p>Let's Start Your Agricultural Journey</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Contact <span>Us</span></h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Have questions? Ready to transform your farm? Our team of agricultural experts is here to help you every step of the way.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option>I'm interested in...</option>
+                            <option>Livestock Management</option>
+                            <option>Crop Planning</option>
+                            <option>Aquaculture/Fish Farming</option>
+                            <option>Full Farm Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>123 AgriLegacy Boulevard, Farm Valley, CA 90210, USA</div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>091 1732 1160</div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>ymoshood868@gmail.com</div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>Monday - Friday: 9am - 6pm PST<br>24/7 Emergency Support</div>
+                </div>
+                <a href="https://wa.me/15551234567" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 1rem;">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Building Tomorrow's Farms Today. Since 1985.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="livestock.html">Livestock Management</a>
+                <a href="aquaculture.html">Aquaculture</a>
+                <a href="crops.html">Crop Planning</a>
+                <a href="services.html">Services</a>
+                <a href="sustainability.html">Sustainability</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="insights.html">Blog & Articles</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Support Center</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

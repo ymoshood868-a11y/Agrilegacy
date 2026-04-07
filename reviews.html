@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Farmer Reviews & Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>What Farmers Say</h1>
+            <p>Trusted by Agricultural Leaders Worldwide</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Success <span>Stories</span></h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Join thousands of satisfied farmers who have transformed their operations with AgriLegacy.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Real <span>Testimonials</span></h2>
+        <div class="cards-grid">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"AgriLegacy transformed our family farm. The livestock management system saved us countless hours and increased our productivity by 60%. The support team is exceptional!"</p>
+                <h3>John Anderson</h3>
+                <p>Anderson Family Farms, Iowa</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"The aquaculture module is revolutionary! Our pond yields have doubled since implementing their smart water management system. ROI achieved in just 6 months."</p>
+                <h3>Maria Santos</h3>
+                <p>Santos Aquaculture, Philippines</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Best investment we made for our farm. The crop planning AI saved our harvest during drought conditions. Can't imagine farming without AgriLegacy now."</p>
+                <h3>David Chen</h3>
+                <p>Chen Organics, California</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"The IoT integration saved us 40% on water bills. The team at AgriLegacy really understands modern farming challenges."</p>
+                <h3>Sarah Johnson</h3>
+                <p>Johnson Farms, Texas</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"From traditional to tech-driven farming in 3 months. AgriLegacy made the transition seamless and profitable."</p>
+                <h3>Michael Okafor</h3>
+                <p>Okafor Agribusiness, Nigeria</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"The blockchain traceability feature helped us get premium prices for our organic produce. Highly recommended!"</p>
+                <h3>Emma Watson</h3>
+                <p>Watson Organics, New Zealand</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section" style="text-align: center;">
+        <div class="newsletter">
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Join Our Success Stories?</h3>
+            <p>Start your journey with AgriLegacy today</p>
+            <a href="contact.html" class="cta-button" style="margin-top: 2rem; display: inline-block;">Get Started →</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Trusted by farmers worldwide.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

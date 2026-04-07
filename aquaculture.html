@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Aquaculture & Fish Farming Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/736x/d5/71/7b/d5717b81e72ecfb12fcfa950827a4e0d.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Aquaculture Excellence</h1>
+            <p>Sustainable Fish Farming Solutions for the Future</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">🐟 <span>Aquaculture</span> Excellence</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Our aquaculture solutions combine IoT technology, water quality monitoring, and data analytics to help you maximize fish production while maintaining environmental sustainability.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Our <span>Solutions</span></h2>
+        <div class="cards-grid cards-grid-4">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/1e/69/60/1e696035de8fabfd51c5e53b4181bbb4.jpg" alt="Fish Pond" class="card-img">
+                <div class="card-content">
+                    <h3>Smart Pond Management</h3>
+                    <p>IoT-enabled water quality monitoring with real-time alerts, automated feeding systems, oxygen level tracking, and temperature control.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/d5/71/7b/d5717b81e72ecfb12fcfa950827a4e0d.jpg" alt="Aquaponics" class="card-img">
+                <div class="card-content">
+                    <h3>Aquaponics Integration</h3>
+                    <p>Symbiotic fish-plant systems, nutrient cycling optimization, sustainable closed-loop farming.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/8e/64/2d/8e642d8a9960d78da6f51a2965cb871b.jpg" alt="Fish Harvest" class="card-img">
+                <div class="card-content">
+                    <h3>Harvest Management</h3>
+                    <p>Growth prediction algorithms with 95% accuracy, optimal harvest timing recommendations.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/11/e5/aa/11e5aa40e086801b2109b5f7ef23d53f.jpg" alt="Water Control" class="card-img">
+                <div class="card-content">
+                    <h3>Water Quality Control</h3>
+                    <p>24/7 pH monitoring, temperature regulation, ammonia level alerts, dissolved oxygen tracking.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/c3/d2/8f/c3d28f315cec62ebd3b96893f3dd29bd.jpg" alt="Breeding" class="card-img">
+                <div class="card-content">
+                    <h3>Breeding Programs</h3>
+                    <p>Genetic selection algorithms, spawning management, fry rearing optimization.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/0e/ce/b7/0eceb753469b6be202cb167196c5ea76.jpg" alt="Analytics" class="card-img">
+                <div class="card-content">
+                    <h3>Production Analytics</h3>
+                    <p>Growth rate tracking dashboards, feed conversion ratio optimization, profitability analysis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/66/87/d6/6687d665dc0567a854f6cb7ec1b932c6.jpg" alt="Sustainability" class="card-img">
+                <div class="card-content">
+                    <h3>Environmental Sustainability</h3>
+                    <p>Eco-friendly systems like recirculating water systems and integrated farming.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/c3/d2/d4/c3d2d4481f955241b22412c8c78fe183.jpg" alt="Feed Safety" class="card-img">
+                <div class="card-content">
+                    <h3>Feed Safety & Quality</h3>
+                    <p>Premium feed management ensuring optimal nutrition and growth rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Building Tomorrow's Farms Today. Since 1985.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="livestock.html">Livestock Management</a>
+                <a href="aquaculture.html">Aquaculture</a>
+                <a href="crops.html">Crop Planning</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="insights.html">Blog & Articles</a>
+                <a href="#">Support Center</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

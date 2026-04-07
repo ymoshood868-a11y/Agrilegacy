@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Premium Farm Management Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/1200x/cb/c8/eb/cbc8eb9389a17fd2d2e5bc6463548f3a.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Premium Services</h1>
+            <p>Comprehensive Agricultural Solutions</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">What We <span>Offer</span></h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">From farm analytics to AI-powered crop diagnosis, our comprehensive suite of services is designed to address every aspect of modern farm management.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <div class="cards-grid cards-grid-4">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/cb/c8/eb/cbc8eb9389a17fd2d2e5bc6463548f3a.jpg" alt="Farm Analytics" class="card-img">
+                <div class="card-content"><h3>Farm Analytics Suite</h3><p>Real-time dashboards tracking 50+ KPIs including production metrics and financial performance.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/e2/8e/5a/e28e5a36eec51218776672e88c032b50.jpg" alt="IoT" class="card-img">
+                <div class="card-content"><h3>IoT Integration</h3><p>Connect 1000+ sensors, drones, and automated equipment for complete farm automation.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/08/3c/55/083c55d15ac970366dfc6e14f7da39c7.jpg" alt="Sustainability" class="card-img">
+                <div class="card-content"><h3>Sustainable Practices</h3><p>Carbon footprint tracking and organic certification assistance.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/a3/ff/db/a3ffdbff23f0c0d7fb2c01604b8470e6.jpg" alt="Equipment" class="card-img">
+                <div class="card-content"><h3>Equipment Management</h3><p>Predictive maintenance scheduling and fuel optimization.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/29/85/b3/2985b395244c250651225d7f65279611.jpg" alt="Market" class="card-img">
+                <div class="card-content"><h3>Market Intelligence</h3><p>Real-time commodity prices and AI-powered selling recommendations.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/eb/5e/5b/eb5e5b2cd867f2809fe37a086fe4aff7.jpg" alt="Labor" class="card-img">
+                <div class="card-content"><h3>Labor Management</h3><p>Smart scheduling, performance tracking, and payroll integration.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/e9/d1/fa/e9d1fa65aa6a7d8717b99ecf75f62239.jpg" alt="Blockchain" class="card-img">
+                <div class="card-content"><h3>Blockchain Traceability</h3><p>End-to-end product tracking with immutable blockchain records.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/ea/25/d5/ea25d5ede3ebe13387b3e998a58a0604.jpg" alt="AI Doctor" class="card-img">
+                <div class="card-content"><h3>AI Crop Doctor</h3><p>Instant disease detection via image recognition and AI treatment recommendations.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Building Tomorrow's Farms Today.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

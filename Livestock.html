@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Premium Livestock Management Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Banner -->
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/736x/dc/83/16/dc8316964e1130601604ab117ddbddad.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Premium Livestock Management</h1>
+            <p>Complete Herd Management Solutions for Modern Farmers</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Elite <span>Livestock</span> Solutions</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Our comprehensive livestock management system combines cutting-edge technology with traditional farming wisdom to help you maximize productivity, ensure animal welfare, and optimize your operations.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/64247ee2293b8621e454f004/68ef431ce6c24318dde140be_Herd%20of%20cows.jpg" alt="Cattle" class="card-img">
+                <div class="card-content">
+                    <h3>🐄 Elite Cattle Management</h3>
+                    <p>Advanced herd tracking with RFID technology, AI-powered health monitoring systems, automated feeding schedules, genetic lineage tracking for premium breeding programs, and real-time weight gain analytics.</p>
+                    <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                        <li>✓ RFID Ear Tag Tracking</li>
+                        <li>✓ Automated Weighing Systems</li>
+                        <li>✓ Health Alert Notifications</li>
+                        <li>✓ Breeding Cycle Optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/23/ae/e2/23aee299f71be1cbaadb614939f9cf85.jpg" alt="Poultry" class="card-img">
+                <div class="card-content">
+                    <h3>🐔 Smart Poultry Solutions</h3>
+                    <p>Real-time egg production analytics with 99% accuracy, climate-controlled coops with automated ventilation, disease prediction algorithms, automated collection systems, and feed optimization.</p>
+                    <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                        <li>✓ Automated Egg Collection</li>
+                        <li>✓ Climate Control Systems</li>
+                        <li>✓ Disease Prediction AI</li>
+                        <li>✓ Feed Conversion Tracking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/ca/f5/89/caf5897b245fd875895da6bd31c83670.jpg" alt="Sheep" class="card-img">
+                <div class="card-content">
+                    <h3>🐑 Premium Sheep & Goats</h3>
+                    <p>Wool quality analysis using AI vision, rotational grazing optimization, breeding cycle tracking with fertility predictions, premium fleece management, and health monitoring wearables.</p>
+                    <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                        <li>✓ Wool Quality Analysis</li>
+                        <li>✓ Rotational Grazing Maps</li>
+                        <li>✓ Fertility Predictions</li>
+                        <li>✓ Health Wearables</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <h2 class="section-title">Key <span>Benefits</span></h2>
+        <div class="cards-grid cards-grid-4">
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-chart-line card-icon"></i>
+                    <h3>40% Productivity Increase</h3>
+                    <p>Farmers using our system report significant improvements in overall herd productivity.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-heartbeat card-icon"></i>
+                    <h3>Reduced Mortality</h3>
+                    <p>Early disease detection reduces livestock mortality by up to 60%.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-dollar-sign card-icon"></i>
+                    <h3>30% Cost Savings</h3>
+                    <p>Optimized feeding and healthcare reduce operational expenses significantly.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fas fa-clock card-icon"></i>
+                    <h3>50% Time Saved</h3>
+                    <p>Automated systems free up your time for strategic decision making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="section" style="text-align: center;">
+        <div class="newsletter">
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Transform Your Livestock Farm?</h3>
+            <p>Schedule a free consultation with our livestock experts today</p>
+            <a href="contact.html" class="cta-button" style="margin-top: 2rem; display: inline-block;">Get Started Now →</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Building Tomorrow's Farms Today. Since 1985.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="livestock.html">Livestock Management</a>
+                <a href="aquaculture.html">Aquaculture</a>
+                <a href="crops.html">Crop Planning</a>
+                <a href="services.html">Services</a>
+                <a href="sustainability.html">Sustainability</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="insights.html">Blog & Articles</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Support Center</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

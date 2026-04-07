@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AgriLegacy - Smart Crop Planning Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Agri<span>Legacy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="livestock.html">Livestock</a></li>
+                <li><a href="aquaculture.html">Aquaculture</a></li>
+                <li><a href="crops.html">Crops</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="openMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav">
+        <button class="close-menu" onclick="closeMobileMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="closeMobileMenu()">🏠 Home</a></li>
+            <li><a href="livestock.html" onclick="closeMobileMenu()">🐄 Livestock Management</a></li>
+            <li><a href="aquaculture.html" onclick="closeMobileMenu()">🐟 Aquaculture / Fish Farming</a></li>
+            <li><a href="crops.html" onclick="closeMobileMenu()">🌾 Crop Planning</a></li>
+            <li><a href="services.html" onclick="closeMobileMenu()">⚙️ Services</a></li>
+            <li><a href="sustainability.html" onclick="closeMobileMenu()">🌍 Sustainability</a></li>
+            <li><a href="reviews.html" onclick="closeMobileMenu()">⭐ Reviews</a></li>
+            <li><a href="insights.html" onclick="closeMobileMenu()">📝 Insights / Blog</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">📞 Contact</a></li>
+        </ul>
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--accent-gold); margin-bottom: 0.5rem;">Connect With Us</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/15551234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Smart Crop Planning</h1>
+            <p>Data-Driven Agricultural Intelligence</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">🌾 <span>Smart</span> Crop Planning</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">Leverage AI, satellite imagery, and IoT sensors to optimize your crop production, reduce waste, and maximize yields sustainably.</p>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <h2 class="section-title">Our <span>Solutions</span></h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg" alt="Seasonal Planning" class="card-img">
+                <div class="card-content">
+                    <h3>Seasonal Rotation</h3>
+                    <p>AI-powered crop rotation schedules that maximize soil health, reduce pest cycles, and increase yields by up to 40% through intelligent planning.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/11/31/08/113108415b57c18ce8c4d96209a186d2.jpg" alt="Irrigation" class="card-img">
+                <div class="card-content">
+                    <h3>Smart Irrigation</h3>
+                    <p>Precision water management with soil moisture sensors, weather integration, and automated drip systems reducing water usage by 50%.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/77/03/5d/77035dced6014f4762682b535ffc528e.jpg" alt="Harvest" class="card-img">
+                <div class="card-content">
+                    <h3>Harvest Forecasting</h3>
+                    <p>Machine learning predictions using satellite imagery and weather data for optimal harvest timing with 95% accuracy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>AgriLegacy</h4><p>Building Tomorrow's Farms Today. Since 1985.</p></div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="livestock.html">Livestock Management</a>
+                <a href="aquaculture.html">Aquaculture</a>
+                <a href="crops.html">Crop Planning</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="insights.html">Blog & Articles</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 AgriLegacy. All rights reserved.</p></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
